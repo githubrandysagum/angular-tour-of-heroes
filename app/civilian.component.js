@@ -9,28 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var app_component_1 = require('./app.component');
-var civilian_component_1 = require('./civilian.component');
-var AppModule = (function () {
-    function AppModule() {
+var CivilianComponent = (function () {
+    function CivilianComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule
-            ],
-            declarations: [
-                app_component_1.AppComponent,
-                civilian_component_1.CivilianComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    CivilianComponent = __decorate([
+        core_1.Component({
+            selector: 'civilian',
+            template: 'We are the civilians!, we want our heroes to protect us'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], CivilianComponent);
+    return CivilianComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.CivilianComponent = CivilianComponent;
+//# sourceMappingURL=civilian.component.js.map
